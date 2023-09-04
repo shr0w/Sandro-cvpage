@@ -86,7 +86,7 @@ const Navbar = props => {
           <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/benvgaming/portfolio-web"
             path={path}
             display="inline-flex"
             alignItems="center"
