@@ -21,6 +21,7 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+import Content from '../components/content'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -29,50 +30,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m an indie developer based in Vietnam </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Manh Cuong
-          </Heading>
-          <p>Backend Developer ( Software/Web Developer )</p>
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
-            <ProfileImage
-              src="/images/ben.jpg"
-              alt="Profile image"
-              borderRadius="full"
-              width="100"
-              height="100"
-            />
-          </Box>
-        </Box>
-      </Box>
-
+        <Content/>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -152,7 +110,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -171,13 +129,13 @@ const Home = () => (
 
         <Heading as="h3" variant="section-title">
           Newsletter
-        </Heading>
-        <p>
+        </Heading> */}
+        {/* <p>
           Join me on a behind-the-scenes coding journey. Weekly updates on
           projects, tutorials, and videos
-        </p>
+        </p> */}
 
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <Button
             as={NextLink}
             href="https://www.devas.life/"
@@ -187,7 +145,7 @@ const Home = () => (
           >
             Sign up my newsletter here
           </Button>
-        </Box>
+        </Box> */}
       </Section>
     </Container>
   </Layout>

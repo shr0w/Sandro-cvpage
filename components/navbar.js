@@ -17,8 +17,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
+import LanguageSwitcher from './language-switcher'
 import { IoLogoGithub } from 'react-icons/io5'
-
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
@@ -80,10 +80,10 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
+          </LinkItem> */}
+          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/benvgaming/portfolio-web"
@@ -100,7 +100,7 @@ const Navbar = props => {
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
-
+          <LanguageSwitcher />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -116,15 +116,15 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
+                {/* <MenuItem as={MenuLink} href="/posts">
                   Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
+                </MenuItem> */}
+                {/* <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
                   Uses
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/benvgaming/portfolio-web"
                 >
                   View Source
                 </MenuItem>
