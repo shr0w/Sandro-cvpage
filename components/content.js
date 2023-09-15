@@ -27,6 +27,8 @@ const translations = {
   en: {
     greeting: 'Hello, I\'m an indie developer based in Vietnam',
     work: 'My name is Manh Cuong, I also go with Ben. I have a passion building digital services/stuffs that I want. I has a knack for all things, from planning and designing to all the way to solving real-life problem with programming.',
+    hobby: '',
+
   },
   vn: {
     greeting: 'Xin Chào, Tôi là lập trình viên ở Việt Nam',
