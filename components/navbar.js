@@ -86,7 +86,7 @@ const Navbar = props => {
           {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://github.com/benvgaming/portfolio-web"
+            href="https://github.com/benvgaming/ben-homepage"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -96,12 +96,30 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
+          
+          <Flex>
+            <Box p='1'>
+              <LanguageSwitcher />
+            </Box>
+            <Box p='1'>
+
+              <ThemeToggleButton />
+            </Box>
+          </Flex>
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
-          <LanguageSwitcher />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+
+            <Flex>
+              <Box p='1'>
+                <LanguageSwitcher />
+              </Box>
+              <Box p='1'>
+
+                <ThemeToggleButton />
+              </Box>
+            </Flex>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -110,9 +128,6 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
-                  About
-                </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
@@ -124,9 +139,7 @@ const Navbar = props => {
                 </MenuItem> */}
                 <MenuItem
                   as={Link}
-                  href="https://github.com/benvgaming/portfolio-web"
-                >
-                  View Source
+                  href="https://github.com/benvgaming/ben-homepage" > View Source
                 </MenuItem>
               </MenuList>
             </Menu>

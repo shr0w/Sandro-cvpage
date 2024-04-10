@@ -31,56 +31,6 @@ const Home = () => (
   <Layout>
     <Container>
         <Content/>
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Work
-        </Heading>
-        <Paragraph>
-          My name is Manh Cuong, I also go with Ben. I have a passion building digital services/stuffs that I want. I has a knack for all things, from planning and designing to all the way to solving real-life problem with programming.
-
-        </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/works"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            My portfolio
-          </Button>
-        </Box>
-      </Section>
-
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>2001</BioYear>
-          Born in Ho Chi Minh City, Vietnam.
-        </BioSection>
-        <BioSection>
-          <BioYear>2022</BioYear>
-          Completed the Computer Programmer Analyst Advanced Diploma at Fanshawe College 
-        </BioSection>
-        <BioSection>
-          <BioYear>2023 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Reading books, Automation and Productivity tools and 
-          technology, Fighting games, Board games
-
-        </Paragraph>
-      </Section>
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
