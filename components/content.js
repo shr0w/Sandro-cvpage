@@ -23,7 +23,7 @@ const translations = {
     bio1: 'Born in Ho Chi Minh City, Vietnam',
     bio2: 'Completed the Computer Programmer Analyst Advanced Diploma at Fanshawe College',
     bio3: 'Work at Blockchain lab, Osaka Metropolitan University as a back-end intern developer',
-    bio4: 'Workinig as freelancer',
+    bio4: 'Working as freelancer',
     hobby: 'Reading books, Automation and Productivity tools and technology, Fighting games, Board games    ',
 
   },
