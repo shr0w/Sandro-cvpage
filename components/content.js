@@ -29,7 +29,7 @@ const translations = {
   },
   vn: {
     greeting: 'Xin Chào, Tôi là lập trình viên ở Việt Nam',
-    work: 'Tên mình là Mạnh Cường, mình còn được gọi là Ben. Mình có sở thích lập trình những thứ mà mình muốn. Mình có thể tự bản thân làm mọi thứ, từ việc lập kế hoạch và thiết kế cho đến giải quyết vấn đề trong cuộc sống bằng lập trình',
+    work: 'Mình là Mạnh Cường, mình còn được gọi là Ben. Mình có sở thích lập trình những thứ mà mình muốn. Mình có thể tự bản thân làm mọi thứ, từ việc lập kế hoạch và thiết kế cho đến giải quyết vấn đề trong cuộc sống bằng lập trình',
     bio1: 'Sinh ra ở Thành Phố Hồ Chí Minh, Việt Nam',
     bio2: 'Hoàn thành Khóa \"Computer Programmer Analyst\" tại Trường Cao đẳng Fanshawe',
     bio3: 'Thực tập tại Blockchain lab, Đại học Osaka Metropolitan',
