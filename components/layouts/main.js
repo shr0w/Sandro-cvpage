@@ -20,7 +20,7 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Ben" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta property="og:site_name" content="Takuya Matsuyama" />
+        <meta property="og:site_name" content="Manh Cuong Nguyen" />
         <meta name="og:title" content="Ben" />
         <meta property="og:type" content="website" />
         <title>Ben - Homepage</title>
