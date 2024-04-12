@@ -23,6 +23,7 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Manh Cuong Nguyen" />
         <meta name="og:title" content="Ben" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/111/483/690/dog-landscape-shiba-inu-terraces-wallpaper-preview.jpg" />
         <title>Ben - Homepage</title>
       </Head>
 
