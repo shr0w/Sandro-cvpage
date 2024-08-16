@@ -1,0 +1,93 @@
+{
+  "common": {
+    "intro": "Hello, I am a professional Marketeer based in Barcelona!",
+    "about-title": "About me",
+    "bio-title": "Bio",
+    "portfolio-button": "My portfolio"
+  },
+
+  "navbar": {
+    "projects": "Works",
+    "aboutme": "About"
+  },
+
+  "about-me": {
+    "intro": "Digital Marketing craftsman: Web development and accessibility, design, SEO / SEM. I'm a passionate about technology and the power it has over people, for this reason, I think in the continuous learning as philosophy, the creation of exclusive experiences to the users and the world transformation through technology. As Marketing Manager in a leading consultancy in the insurance mediation sector nationwide I have been part and responsible for all projects for clients nationwide."
+  },
+
+  "aboutme": {
+    "title": "About Me - Things I like to do:",
+    "boxing": "Boxing training",
+    "gaming": "Gaming sessions",
+    "culture": "Asian culture",
+    "netflix": "Netflix and chill",
+    "reading": "Reading books",
+    "coffee": "Coffee lover"
+  },
+
+  "bio": {
+    "born": "Born in Barcelona, Cataluña, Spain.",
+    "career": "Graduated in Digital Marketing.",
+    "ondigital-job": "I started working in various insurance companies, mostly administrative positions.",
+    "tech-job": "I worked in various technology companies.",
+    "solvento-job": "Head of the MKT department at Solvento Consulting as Marketing Manager.",
+    "current-title": "~"
+  },
+
+  "works": {
+    "title": "Works",
+    "description": "Featured works:",
+    "solvento": {
+      "title": "Solvento Consulting",
+      "copy": "Solvento Consulting is a company that offers the best solutions for your business. I've been working with them for a while now as Marketing Manager."
+    },
+    "cafesalvador": {
+      "title": "Salvador's Coffee Shop",
+      "copy": "Long known Coffee Shop in Barcelona, I've designed their website and re-branding."
+    },
+    "sanitas": {
+      "title": "Sanitas",
+      "copy": "Worked as Marketing Assistant in the Marketing Department, a leading health insurance company in Spain."
+    },
+    "msi": {
+      "title": "MSI",
+      "copy": "Did an internship in the Marketing Department of MSI, a leading company in the gaming sector."
+  }
+},
+
+  "collabs": {
+    "title": "Collabs",
+    "copy": "Besides working on my own projects, I also collaborate with other companies and individuals. Here are some of the projects I've worked on.",
+    "zwheel":"Helped boosting the e-commerce sales of the company.",
+    "onlylens":"I've created scrappers for their e-commerce.",
+    "cdm":"Developed and designed the website of this amazing YouTuber."
+  },
+
+
+  "skills": {
+    "stuff": {
+      "tv": "Netflix and chill",
+      "vydia": "True gamerdad",
+      "food": "Foodie",
+      "basket": "Baller",
+      "bigbrain": "Self-taught",
+      "kitty": "Crazycat man"
+
+    },
+    "hard": {
+      "basics": "HTML5, CSS3  y JavaScript",
+      "next-react": "React.js y Next.js",
+      "css": "CSS3, Styled Components, PostCSS",
+      "control-version": "Git",
+      "cms": "WordPress",
+      "creative": "Adobe Package"
+    }
+  },
+
+  "404": {
+    "title": "404 | Not Found",
+    "message": "Hey, looks like you're lost, don't worry, I'm here to help you find your way back home.",
+    "button": "Homepage"
+  }
+}
+

@@ -1,0 +1,90 @@
+{
+  "common": {
+    "intro": "¡Hola, soy un profesional del Marketing Digital y resido en Barcelona!",
+    "about-title": "Acerca de Mi",
+    "bio-title": "Trayectoría",
+    "portfolio-button": "Mis proyectos"
+  },
+
+  "navbar": {
+    "projects": "Trabajos",
+    "aboutme": "Sobre mi"
+  },
+
+  "about-me": {
+    "intro": "Artesano del Marketing Digital: Desarrollo web y accesibilidad, diseño, SEO/SEM. Soy un apasionado de la tecnología y del poder que tiene sobre las personas, por esta razón, pienso en el aprendizaje continuo como filosofía, la creación de experiencias exclusivas para los usuarios y la transformación del mundo a través de la tecnología. Como Marketing Manager en una consultora líder en el sector de la mediación de seguros a nivel nacional he sido parte y responsable de todos los proyectos para clientes a nivel nacional."
+  },
+
+  "aboutme": {
+      "title": "Sobre mí - Cosas que me gusta hacer:",
+      "boxing": "Entrenamiento de boxeo",
+      "gaming": "Sesiones de videojuegos",
+      "culture": "Cultura asiática",
+      "netflix": "Netflix y relajarse",
+      "reading": "Lectura de libros",
+      "coffee": "Amante del café"
+  },
+
+  "bio": {
+    "born": "Soy de Barcelona, Cataluña, España.",
+    "career": "Graduado en Marketing Digital.",
+    "ondigital-job": "Trabajé en diversas empresas aseguradoras, en cargos administrativos.",
+    "tech-job": "Trabajé en diversas empresas tecnológicas.",
+    "solvento-job": "Responsable del departamento de MKT en Solvento Consulting como Marketing Manager.",
+    "current-title": "~"
+  },
+
+  "works": {
+    "title": "Trabajos",
+    "description": "Trabajos destacados:",
+    "solvento": {
+      "title": "Solvento Consulting",
+      "copy": "Solvento Consulting es una empresa que ofrece las mejores soluciones para tu negocio. He estado trabajando con ellos durante un tiempo como Gerente de Marketing."
+    },
+    "cafesalvador": {
+      "title": "Cafès Salvador Barceloneta",
+      "copy": "Cafetería reconocida en Barcelona, he diseñado su página web y rebranding."
+    },
+    "sanitas": {
+      "title": "Sanitas",
+      "copy": "Trabajé como Asistente de Marketing, en una empresa líder de seguros de salud en España."
+    },
+    "msi": {
+      "title": "MSI",
+      "copy": "Trabajé como becario en el Departamento de Marketing de MSI España, una empresa líder en el sector de los videojuegos."
+  }
+  },
+
+  "collabs": {
+    "title": "Colabs",
+    "copy": "Además de trabajar en mis propios proyectos, también colaboro con otras empresas y personas. Aquí tienes algunos de los proyectos en los que he trabajado.",
+    "zwheel":"Ayudé a impulsar las ventas en línea de la empresa.",
+    "onlylens":"He creado scrapers para su comercio electrónico.",
+    "cdm":"Desarrollé y diseñé el sitio web de este increíble YouTuber."
+  },
+
+  "skills": {
+    "stuff": {
+      "tv": "Netflix and chill",
+      "vydia": "Videojuegos",
+      "food": "Disfrutar de la gastronomía",
+      "basket": "Baloncesto",
+      "bigbrain": "Autodidacta",
+      "kitty": "Loco de los gatos"
+    },
+    "hard": {
+      "basics": "HTML5, CSS3  y JavaScript",
+      "next-react": "React.js y Next.js",
+      "css": "CSS3, Styled Components, PostCSS",
+      "control-version": "Git",
+      "cms": "WordPress",
+      "creative": "Paquete Adobe"
+    }
+  },
+
+  "404": {
+    "title": "404 | Página no encontrada",
+    "message": "La página que buscas no esta disponible",
+    "button": "Inicio"
+  }
+}

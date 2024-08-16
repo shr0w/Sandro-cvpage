@@ -2,30 +2,91 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import thumbPandemic from '../public/images/works/pandemic1.png'
-import thumbYum from '../public/images/works/yum.png'
-const Works = () => (
+import { GridItem } from '../components/grid-item'
+import thumbSolvento from '../public/images/works/solvento.png'
+import thumbSanitas from '../public/images/works/sanitas.png'
+import thumbMsi from '../public/images/works/msi.png'
+import thumbCafesalvador from '../public/images/works/cafesalvador.png'
+import thumbZwheel from '../public/images/works/zwheel.png'
+import thumbOnlylens from '../public/images/works/onlylens.png'
+import thumbCdm from '../public/images/works/cdm.png'
+import { useTranslation } from 'react-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+const Works = () => {
+  const { t } = useTranslation('common');
+  return (
   <Layout title="Works">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Works
+      <Heading as="h3" fontSize={26} mb={4}>
+      {t('works.title')}
       </Heading>
+      <Section>
+      <p>{t('works.description')}</p>
+      </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid>
         <Section>
-          <WorkGridItem id="pandemic" title="Pandemic" thumbnail={thumbPandemic}>
-            A Pandemic simulator
+          <WorkGridItem id="https://solventoconsulting.com" title={t('works.solvento.title')} thumbnail={thumbSolvento}>
+          {t('works.solvento.copy')}
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="yum" title="Yum" thumbnail={thumbYum}>
-            A website to play the board game Yum/Yahtzee
+          <WorkGridItem id="https://www.sanitas.es" title={t('works.sanitas.title')} thumbnail={thumbSanitas}>
+          {t('works.sanitas.copy')}
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="https://es.msi.com/" title={t('works.msi.title')} thumbnail={thumbMsi}>
+          {t('works.msi.copy')}
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="https://cafesalvadorbcn.com/" title={t('works.cafesalvador.title')} thumbnail={thumbCafesalvador}>
+          {t('works.cafesalvador.copy')}
           </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
+
+    <Container>
+      <hr style={{ borderTop: '1px solid #ccc', margin: '40px 0' }} />
+    </Container>
+
+    <Container>
+    <Heading as="h3" fontSize={26} mb={4}>
+    {t('collabs.title')}
+      </Heading>
+    </Container>
+    <Container mb={10} align="justify">
+    {t('collabs.copy')}
+      </Container>
+    <SimpleGrid columns={[3, 3, 3]} gap={10}>
+    <Section>
+          <GridItem id="https://zwheel-shop.com/" title="Zwheel" Text="Zwheel" thumbnail={thumbZwheel}>
+          {t('collabs.zwheel')}
+          </GridItem>
+        </Section>
+        <Section>
+          <GridItem id="https://onlylens.com" title="OnlyLens" Text="OnlyLens" thumbnail={thumbOnlylens}>
+          {t('collabs.onlylens')}
+          </GridItem>
+        </Section>
+        <Section>
+          <GridItem id="https://controldemision.com" title="Control De Misión" Text="CDM" thumbnail={thumbCdm}>
+          {t('collabs.cdm')}
+          </GridItem>
+        </Section>
+      </SimpleGrid>
   </Layout>
-)
+)};
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])), // Load the 'common' namespace translations for the current locale.
+    },
+  };
+}
 
 export default Works
-export { getServerSideProps } from '../components/chakra'

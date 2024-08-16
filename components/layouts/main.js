@@ -5,6 +5,7 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 import VoxelDogLoader from '../voxel-dog-loader'
 
+
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
@@ -15,16 +16,16 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Ben's homepage" />
-        <meta name="author" content="Ben" />
-        <meta name="author" content="Ben" />
+        <meta name="description" content="Sandro CV Website in JS" />
+        <meta name="author" content="Sandro" />
+        <meta name="author" content="Sandro" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta property="og:site_name" content="Manh Cuong Nguyen" />
-        <meta name="og:title" content="Ben" />
+        <meta property="og:site_name" content="Sandro CV Website" />
+        <meta name="og:title" content="Sandro" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/111/483/690/dog-landscape-shiba-inu-terraces-wallpaper-preview.jpg" />
-        <title>Ben - Homepage</title>
+        <meta property="og:image" content="https://w.wallhaven.cc/full/jx/wallhaven-jx7krp.jpg" />
+        <title>Sandro - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />

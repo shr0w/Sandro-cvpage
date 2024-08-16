@@ -1,6 +1,8 @@
 import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 import {
   Container,
   Box,
@@ -13,12 +15,16 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Button,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import LanguageSwitcher from './language-switcher'
 import { IoLogoGithub } from 'react-icons/io5'
+
+
+
+
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
@@ -44,7 +50,8 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
   const { path } = props
-
+  const { t } = useTranslation()
+  const router = useRouter()
   return (
     <Box
       position="fixed"
@@ -78,15 +85,17 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+          {t('navbar.projects')}
           </LinkItem>
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
-          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
+          <LinkItem href="/posts" path={path}>
+          {t('navbar.aboutme')}
+          </LinkItem>
+          <LinkItem href="/public/docs/cv/test.pdf" path={path}>
+            CV PDF
+          </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/benvgaming/ben-homepage"
+            href="https://github.com/shr0w"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -96,13 +105,16 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
+          <NextLink href="/" locale={router.locale === 'es' ? 'en' : 'es'}>
+            <Button colorScheme="teal" size="xs">
+              {router.locale === 'es' ? 'EN' : 'ES'}
+            </Button>
+          </NextLink>
           
           <Flex>
             <Box p='1'>
-              <LanguageSwitcher />
             </Box>
             <Box p='1'>
-
               <ThemeToggleButton />
             </Box>
           </Flex>
@@ -110,16 +122,6 @@ const Navbar = props => {
 
         <Box flex={1} align="right">
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-
-            <Flex>
-              <Box p='1'>
-                <LanguageSwitcher />
-              </Box>
-              <Box p='1'>
-
-                <ThemeToggleButton />
-              </Box>
-            </Flex>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -131,16 +133,22 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                {/* <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem> */}
-                {/* <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem> */}
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/benvgaming/ben-homepage" > View Source
+                <NextLink href="/portfolio" passHref>
+                  <MenuItem as={Link}>Portfolio</MenuItem>
+                </NextLink>
+                <NextLink href="/cv" passHref>
+                  <MenuItem as={Link}>CV PDF</MenuItem>
+                </NextLink>
+                <MenuItem as={Link} href="https://github.com/shr0w">
+                  View Source
                 </MenuItem>
+                <NextLink href="/" locale={router.locale === 'es' ? 'en' : 'es'} passHref>
+                  <MenuItem as={Link}>
+                    <Button colorScheme="teal" size="sm">
+                      {router.locale === 'es' ? 'English' : 'Español'}
+                    </Button>
+                  </MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>
@@ -148,6 +156,14 @@ const Navbar = props => {
       </Container>
     </Box>
   )
+}
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])), // Load the 'common' namespace translations for the current locale.
+    },
+  };
 }
 
 export default Navbar

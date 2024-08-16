@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Flex,  Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -21,26 +21,31 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+export const WorkGridItem = ({ children, id, title, thumbnail, }) => (
+  <Box width="200%" display="inline-block" textAlign="start">
     <LinkBox
       as={NextLink}
-      href={`/works/${id}`}
+      href={`${id}`}
       scroll={false}
       cursor="pointer"
     >
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-      />
-      <LinkOverlay as="div" href={`/works/${id}`}>
-        <Text mt={2} fontSize={20}>
-          {title}
-        </Text>
-      </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Flex direction="row" align="center">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          width={"300"}
+        />
+        <Box ml={5} textAlign="left"> {/* Add margin left to separate image and text */}
+          <LinkOverlay as="div" href={`/works/${id}`}>
+            <Text fontSize={26}>
+              {title}
+            </Text>
+          </LinkOverlay>
+          <Text fontSize={14}>{children}</Text>
+        </Box>
+      </Flex>
     </LinkBox>
   </Box>
 )

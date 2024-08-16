@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = '/shiba.glb'
+  const urlDogGLB = '/voxel_lucky_cat.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -24,6 +24,7 @@ const VoxelDog = () => {
       renderer.setSize(scW, scH)
     }
   }, [])
+  
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -52,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.00005 + 4.8
+      const scale = scH * 0.00005 + 3.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -64,8 +65,9 @@ const VoxelDog = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 4);
+      directionalLight.position.set(1, 1, 1, 1, 1);
+      scene.add(directionalLight);
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
@@ -73,7 +75,7 @@ const VoxelDog = () => {
 
       loadGLTFModel(scene, urlDogGLB, {
         receiveShadow: false,
-        castShadow: false
+        castShadow: true
       }).then(() => {
         animate()
         setLoading(false)
@@ -90,10 +92,10 @@ const VoxelDog = () => {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-          camera.position.y = 10
-          camera.position.x =
+          camera.position.y = 20
+          camera.position.x = 
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-          camera.position.z =
+          camera.position.z = 
             p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
