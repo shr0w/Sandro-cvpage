@@ -63,17 +63,17 @@ const Works = () => {
       </Container>
     <SimpleGrid columns={[3, 3, 3]} gap={10}>
     <Section>
-          <GridItem id="https://zwheel-shop.com/" title="Zwheel" Text="Zwheel" thumbnail={thumbZwheel}>
+          <GridItem href="https://zwheel-shop.com/" title="Zwheel" Text="Zwheel" thumbnail={thumbZwheel}>
           {t('collabs.zwheel')}
           </GridItem>
         </Section>
         <Section>
-          <GridItem id="https://onlylens.com" title="OnlyLens" Text="OnlyLens" thumbnail={thumbOnlylens}>
+          <GridItem href="https://onlylens.com" title="OnlyLens" Text="OnlyLens" thumbnail={thumbOnlylens}>
           {t('collabs.onlylens')}
           </GridItem>
         </Section>
         <Section>
-          <GridItem id="https://controldemision.com" title="Control De Misión" Text="CDM" thumbnail={thumbCdm}>
+          <GridItem href="https://controldemision.com" title="Control De Misión" Text="CDM" thumbnail={thumbCdm}>
           {t('collabs.cdm')}
           </GridItem>
         </Section>
