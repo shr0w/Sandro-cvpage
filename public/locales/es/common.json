@@ -86,7 +86,7 @@
 
   "404": {
     "title": "404 | Página no encontrada",
-    "message": "La página que buscas no esta disponible",
-    "button": "Inicio"
+    "text": "La página que buscas no esta disponible",
+    "button": "Volver al Inicio"
   }
 }

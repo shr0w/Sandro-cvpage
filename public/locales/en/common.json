@@ -88,7 +88,7 @@
 
   "404": {
     "title": "404 | Not Found",
-    "message": "Hey, looks like you're lost, don't worry, I'm here to help you find your way back home.",
+    "text": "Hey, looks like you're lost, don't worry, I'm here to help you find your way back home.",
     "button": "Homepage"
   }
 }
