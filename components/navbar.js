@@ -90,7 +90,7 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
           {t('navbar.aboutme')}
           </LinkItem>
-          <LinkItem href="/public/docs/cv/test.pdf" path={path}>
+          <LinkItem href="https://drive.google.com/file/d/14rfnVHPDykjn4hoZ0IGvPovLChll1NAM/view?usp=sharing" path={path}>
             CV PDF
           </LinkItem>
           <LinkItem
@@ -136,7 +136,7 @@ const Navbar = props => {
                 <NextLink href="/portfolio" passHref>
                   <MenuItem as={Link}>Portfolio</MenuItem>
                 </NextLink>
-                <NextLink href="/cv" passHref>
+                <NextLink href="https://drive.google.com/file/d/14rfnVHPDykjn4hoZ0IGvPovLChll1NAM/view?usp=sharing" passHref>
                   <MenuItem as={Link}>CV PDF</MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href="https://github.com/shr0w">

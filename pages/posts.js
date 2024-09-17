@@ -26,22 +26,18 @@ const Posts = () => {
           <GridItem
             title= {t('aboutme.boxing')}
             thumbnail={thumbBoxing}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
           />
           <GridItem
             title={t('aboutme.gaming')}
             thumbnail={thumbGaming}
-            href="https://www.youtube.com/watch?v=-qBavwqc_mY"
           />
           <GridItem
             title={t('aboutme.culture')}
             thumbnail={thumbCulture}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
           />
           <GridItem
             title={t('aboutme.netflix')}
             thumbnail={thumbNetflix}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
           />
         </SimpleGrid>
       </Section>
@@ -51,12 +47,10 @@ const Posts = () => {
           <GridItem
             title={t('aboutme.reading')}
             thumbnail={thumbRead}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
           />
           <GridItem
             title={t('aboutme.coffee')}
             thumbnail={thumbCoffee}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
           />
         </SimpleGrid>
       </Section>
