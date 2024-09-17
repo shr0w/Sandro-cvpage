@@ -1,7 +1,7 @@
 {
-  "name": "ben-homepage",
+  "name": "Sandro-CV",
   "version": "1.0.0",
-  "description": "Ben's website",
+  "description": "Sandro's CV Website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Ben",
+  "author": "Sandro Vargas",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",

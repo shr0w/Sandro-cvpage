@@ -199,12 +199,10 @@ const Page = () => {
   );
 };
 
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])), // Load the 'common' namespace translations for the current locale.
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])), // Load the 'common' namespace translations for the current locale.
     },
-  };
-}
+  });
 
 export default Page;
