@@ -15,7 +15,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const Posts = () => {
   const { t } = useTranslation('common');
   return (
-  <Layout title="Posts">
+  <Layout title="About">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
       {t('aboutme.title')}

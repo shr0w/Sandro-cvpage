@@ -21,6 +21,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { IoLinkSharp } from "react-icons/io5";
 
 
 
@@ -103,7 +104,19 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            {t('navbar.source')}
+          </LinkItem>        
+          <LinkItem
+            target="_blank"
+            href="https://not-linktree-six.vercel.app/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+           <IoLinkSharp />
+           {t('navbar.links')}
           </LinkItem>
           <NextLink href="/" locale={router.locale === 'es' ? 'en' : 'es'}>
             <Button colorScheme="teal" size="xs">
