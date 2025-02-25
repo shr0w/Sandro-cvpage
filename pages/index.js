@@ -36,7 +36,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Sandro Vargas
             </Heading>
-            <p>Marketeer, Developer and Designer. (All in One.)</p>
+            <p>Marketeer, Web Developer and Designer.</p>
           </Box>
 
           <Box
@@ -134,7 +134,7 @@ const Page = () => {
                 <ListItem>{t('skills.hard.basics')}</ListItem>
                 <ListItem>{t('skills.hard.next-react')}</ListItem>
                 <ListItem>{t('skills.hard.css')}</ListItem>
-                <ListItem>{t('skills.hard.control-version')}</ListItem>
+                <ListItem>{t('skills.hard.ia')}</ListItem>
                 <ListItem>{t('skills.hard.cms')}</ListItem>
                 <ListItem>{t('skills.hard.creative')}</ListItem>
               </UnorderedList>

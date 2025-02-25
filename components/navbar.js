@@ -88,7 +88,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
           {t('navbar.projects')}
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="/megusta" path={path}>
           {t('navbar.aboutme')}
           </LinkItem>
           <LinkItem href= {t('navbar.cv')} path={path}>

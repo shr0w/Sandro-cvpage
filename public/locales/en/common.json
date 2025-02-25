@@ -19,13 +19,16 @@
   },
 
   "aboutme": {
-    "title": "About Me - Things I like to do:",
-    "boxing": "Boxing and gym training",
-    "gaming": "Gaming sessions",
-    "culture": "Asian culture",
+    "title": "About Me",
+    "gym": "Gym training",
+    "gaming": "Slaying on Fortnite",
+    "gastronomy": "Asian Gastronomy",
     "netflix": "Netflix and chill",
-    "reading": "Reading books",
-    "coffee": "Coffee lover"
+    "reading": "Reading a good book",
+    "coffee": "Coffee lover",
+    "megustatitle": "What does people say about me:",
+    "megustatext"  : "Charismatic person\nNatural energy\nSupportive and genuine\nExtroverted\nPositive energy\nResourceful\nProactive and ambitious",
+    "thingsIDoTitle": "Things I enjoy:"
   },
 
   "bio": {
@@ -81,7 +84,7 @@
       "basics": "HTML5, CSS3  y JavaScript",
       "next-react": "React.js y Next.js",
       "css": "CSS3, Styled Components, PostCSS",
-      "control-version": "Git",
+      "IA": "IA Enthusiast",
       "cms": "WordPress",
       "creative": "Adobe Package"
     }
