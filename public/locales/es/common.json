@@ -38,6 +38,7 @@
     "ondigital-job": "Trabajé en diversas empresas aseguradoras, en cargos administrativos.",
     "tech-job": "Trabajé en diversas empresas tecnológicas.",
     "solvento-job": "Responsable del departamento de MKT en Solvento Consulting como Marketing Manager.",
+    "artic-job": "Desarrollador y Diseñador Web en Artic Agency.",
     "current-title": "~"
   },
 
@@ -47,6 +48,10 @@
     "solvento": {
       "title": "Solvento Consulting",
       "copy": "Solvento Consulting es una empresa que ofrece las mejores soluciones para tu negocio. He estado trabajando con ellos durante un tiempo como Gerente de Marketing."
+    },
+    "artic": {
+      "title": "Artic Agency",
+      "copy": "Artic Agency es una agencia de marketing digital que ofrece servicios de SEO, SEM y desarrollo web. Trabajo con ellos como Desarrollador y Diseñador Web."
     },
     "cafesalvador": {
       "title": "Cafès Salvador Barceloneta",
@@ -65,7 +70,7 @@
   "collabs": {
     "title": "Colabs",
     "copy": "Además de trabajar en mis propios proyectos, también colaboro con otras empresas y personas. Aquí tienes algunos de los proyectos en los que he trabajado.",
-    "zwheel":"Ayudé a impulsar las ventas en línea de la empresa.",
+    "zwheel":"Ayudé a impulsar las ventas en línea de su e-commerce.",
     "onlylens":"He creado scrapers para su comercio electrónico.",
     "cdm":"Desarrollé y diseñé el sitio web de este increíble YouTuber."
   },

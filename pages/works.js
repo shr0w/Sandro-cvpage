@@ -3,6 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { GridItem } from '../components/grid-item'
+import thumbArtic from '../public/images/works/artic.png'
 import thumbSolvento from '../public/images/works/solvento.png'
 import thumbSanitas from '../public/images/works/sanitas.png'
 import thumbMsi from '../public/images/works/msi.png'
@@ -12,7 +13,6 @@ import thumbOnlylens from '../public/images/works/onlylens.png'
 import thumbCdm from '../public/images/works/cdm.png'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
 const Works = () => {
   const { t } = useTranslation('common');
   return (
@@ -26,6 +26,11 @@ const Works = () => {
       </Section>
 
       <SimpleGrid>
+      <Section>
+          <WorkGridItem id="https://articagency.com" title={t('works.artic.title')} thumbnail={thumbArtic}>
+          {t('works.artic.copy')}
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem id="https://solventoconsulting.com" title={t('works.solvento.title')} thumbnail={thumbSolvento}>
           {t('works.solvento.copy')}

@@ -108,6 +108,10 @@ const Page = () => {
             <BioYear>2020 </BioYear>
             {t('bio.solvento-job')}
           </BioSection>
+          <BioSection>
+            <BioYear>2025 </BioYear>
+            {t('bio.artic-job')}
+          </BioSection>
         </Section>
 
         {/* Skills Section */}

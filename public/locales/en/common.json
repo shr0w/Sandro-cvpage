@@ -37,6 +37,7 @@
     "ondigital-job": "I started working in various insurance companies, mostly administrative positions.",
     "tech-job": "I worked in various technology companies.",
     "solvento-job": "Head of the MKT department at Solvento Consulting as Marketing Manager.",
+    "artic-job": "Web Developer and Designer at Artic Agency.",
     "current-title": "~"
   },
 
@@ -46,6 +47,10 @@
     "solvento": {
       "title": "Solvento Consulting",
       "copy": "Solvento Consulting is a company that offers the best solutions for your business. I've been working with them for a while now as Marketing Manager."
+    },
+    "artic": {
+      "title": "Artic Agency",
+      "copy": "Artic Agency es una agencia de marketing digital que ofrece servicios de SEO, SEM y desarrollo web. Trabajo con ellos como Desarrollador y Diseñador Web."
     },
     "cafesalvador": {
       "title": "Salvador's Coffee Shop",
