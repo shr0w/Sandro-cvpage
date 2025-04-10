@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Button, Flex, Input, Select } from '@chakra-ui/react'
+import { Box, Flex, Input, Select } from '@chakra-ui/react'
 
 const WorkFilter = ({ onFilterChange }) => {
   const [filters, setFilters] = useState({
