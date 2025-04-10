@@ -11,7 +11,8 @@
     "aboutme": "About",
     "source": "Source",
     "links": "Links",
-    "cv": "https://drive.google.com/file/d/1LizYJoJnWxxXPauSch5RPQuElnPcIzEe/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/1LizYJoJnWxxXPauSch5RPQuElnPcIzEe/view?usp=sharing",
+    "blog": "Blog"
   },
 
   "about-me": {
@@ -96,9 +97,22 @@
   },
 
   "404": {
-    "title": "404 | Not Found",
-    "text": "Hey, looks like you're lost, don't worry, I'm here to help you find your way back home.",
-    "button": "Homepage"
+    "title": "404 | Page Not Found",
+    "text": "The page you are looking for is not available",
+    "button": "Back to Home"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read More",
+    "articles": {
+      "article-1": {
+        "title": "Welcome to my blog",
+        "description": "First blog entry where I share my thoughts about digital marketing and web development",
+        "date": "2024-03-20",
+        "content": "Welcome to my blog! Here I will share my experiences and knowledge about digital marketing, web development and the latest technology trends."
+      }
+    }
   }
 }
 

@@ -1,23 +1,9 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import { Box, Container } from '@chakra-ui/react'
-import Navbar from '../navbar'
-import Footer from '../footer'
-import PageTransition from '../page-transition'
-import VoxelDogLoader from '../voxel-dog-loader'
-import { useRouter } from 'next/router'
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-  ssr: false,
-  loading: () => <VoxelDogLoader />
-})
-
-const Main = ({ children, title, description, image }) => {
-  const router = useRouter()
-  const isHome = router.pathname === '/'
-
+const BlogPost = ({ children, title, description, image }) => {
   return (
-    <Box as="main" pb={8}>
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={description} />
@@ -34,18 +20,13 @@ const Main = ({ children, title, description, image }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar path={router.asPath} />
-
-      <Container maxW="container.md" pt={20}>
-        {isHome && <LazyVoxelDog />}
-        <PageTransition>
+      <Box as="main" pb={8}>
+        <Container maxW="container.md" pt={20}>
           {children}
-        </PageTransition>
-      </Container>
-
-      <Footer />
-    </Box>
+        </Container>
+      </Box>
+    </>
   )
 }
 
-export default Main
+export default BlogPost 

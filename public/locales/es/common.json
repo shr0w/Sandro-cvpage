@@ -11,7 +11,8 @@
     "aboutme": "Sobre mi",
     "source": "Fuente",
     "links": "Otros links",
-    "cv": "https://drive.google.com/file/d/1p1tRnKf5jIVHBlEQF7ES5nki9U9ZBNs8/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/1p1tRnKf5jIVHBlEQF7ES5nki9U9ZBNs8/view?usp=sharing",
+    "blog": "Blog"
   },
 
   "about-me": {
@@ -98,5 +99,18 @@
     "title": "404 | Página no encontrada",
     "text": "La página que buscas no esta disponible",
     "button": "Volver al Inicio"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "readMore": "Leer más",
+    "articles": {
+      "article-1": {
+        "title": "Bienvenidos a mi blog",
+        "description": "Primera entrada del blog donde comparto mis pensamientos sobre marketing digital y desarrollo web",
+        "date": "2024-03-20",
+        "content": "¡Bienvenidos a mi blog! Aquí compartiré mis experiencias y conocimientos sobre marketing digital, desarrollo web y las últimas tendencias en tecnología."
+      }
+    }
   }
 }
